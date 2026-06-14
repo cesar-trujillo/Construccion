@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5471D779-6846-46AD-B6CE-3089D017F12B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ClubNaval</RootNamespace>
+    <AssemblyName>ClubNaval</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enumeradores.cs" />
+    <Compile Include="FRMAltaPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAltaPersona.Designer.cs">
+      <DependentUpon>FRMAltaPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMConsultaPersonas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMConsultaPersonas.Designer.cs">
+      <DependentUpon>FRMConsultaPersonas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMActualizarPersona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMActualizarPersona.Designer.cs">
+      <DependentUpon>FRMActualizarPersona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMAltaBarco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAltaBarco.Designer.cs">
+      <DependentUpon>FRMAltaBarco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMConsultaBarcos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMConsultaBarcos.Designer.cs">
+      <DependentUpon>FRMConsultaBarcos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMActualizarBarco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMActualizarBarco.Designer.cs">
+      <DependentUpon>FRMActualizarBarco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMAltaSalida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAltaSalida.Designer.cs">
+      <DependentUpon>FRMAltaSalida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMConsultaSalidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMConsultaSalidas.Designer.cs">
+      <DependentUpon>FRMConsultaSalidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FRMAltaPersona.resx">
+      <DependentUpon>FRMAltaPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMConsultaPersonas.resx">
+      <DependentUpon>FRMConsultaPersonas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMActualizarPersona.resx">
+      <DependentUpon>FRMActualizarPersona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMAltaBarco.resx">
+      <DependentUpon>FRMAltaBarco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMConsultaBarcos.resx">
+      <DependentUpon>FRMConsultaBarcos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMActualizarBarco.resx">
+      <DependentUpon>FRMActualizarBarco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMAltaSalida.resx">
+      <DependentUpon>FRMAltaSalida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMConsultaSalidas.resx">
+      <DependentUpon>FRMConsultaSalidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesoDatos\AccesoDatos.csproj">
+      <Project>{dcac5a21-4b56-4c77-9030-ec1252309b6e}</Project>
+      <Name>AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entidades\Entidades.csproj">
+      <Project>{4a7db0b3-472b-4a39-8d69-e19144935f1b}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogicaNegocio\LogicaNegocio.csproj">
+      <Project>{859dd550-e2df-4d08-80b0-ad18a406859c}</Project>
+      <Name>LogicaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

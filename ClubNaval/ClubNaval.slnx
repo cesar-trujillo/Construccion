@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../AccesoDatos/AccesoDatos.csproj" Id="dcac5a21-4b56-4c77-9030-ec1252309b6e" />
+  <Project Path="../Entidades/Entidades.csproj" Id="4a7db0b3-472b-4a39-8d69-e19144935f1b" />
+  <Project Path="../LogicaNegocio/LogicaNegocio.csproj" Id="859dd550-e2df-4d08-80b0-ad18a406859c" />
+  <Project Path="ClubNaval.csproj" Id="5471d779-6846-46ad-b6ce-3089d017f12b" />
+</Solution>
